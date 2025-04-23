@@ -5,8 +5,8 @@ import Slider from "./components/Slider.jsx";
 import { useState } from "react";
 
 function App() {
-  const day = "src/assets/images/day.png";
-  const night = "src/assets/images/night.png";
+  const day = "public/assets/images/day.png";
+  const night = "public/assets/images/night.png";
   //var for night mode toggle
   const [isDaytime, setIsDaytime] = useState(true);
 
@@ -20,7 +20,11 @@ function App() {
       <div className={isDaytime ? "day" : "night"}>
         <div className="headerContainer">
           <Link to="/">
-            <img id="headerLogo" src="src/assets/images/logo.svg" alt="Logo" />
+            <img
+              id="headerLogo"
+              src="public/assets/images/logo.svg"
+              alt="Logo"
+            />
           </Link>
           <Slider
             backgroundImage={night}

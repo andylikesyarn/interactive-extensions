@@ -6,10 +6,10 @@ import Button from "../components/Button.jsx";
 
 function Home() {
   //vars for bg images in sliders
-  const red = "src/assets/images/red.svg";
-  const green = "src/assets/images/green.svg";
-  const day = "src/assets/images/day.png";
-  const night = "src/assets/images/night.png";
+  const red = "public/assets/images/red.svg";
+  const green = "public/assets/images/green.svg";
+  const day = "public/assets/images/day.png";
+  const night = "public/assets/images/night.png";
 
   //vars for buttons
   const [filter, setFilter] = useState("all");
@@ -58,8 +58,7 @@ function Home() {
 
   return (
     <>
-      <div >
-    
+      <div>
         <div id="buttonBox">
           <Button
             buttonText="ACTIVE"
