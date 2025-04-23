@@ -24,16 +24,18 @@ function Card({
         <h3>{name}</h3>
         <p>{description}</p>
         <p>{key}</p>
-        <p>{id}</p>
         <p>{isActive}</p>
         <p>{isRemoved}</p>
-        <Button buttonText={"remove extension"} onClick={() => onClick(id)} />
-        <Slider
-          backgroundImage={backgroundImage}
-          altBackgroundImage={altBackgroundImage}
-          isActive={isActive}
-          onToggle={() => onToggleActive(id)}
-        />
+
+        <div className="cardOptions">
+          <Button buttonText={"remove extension"} onClick={() => onClick(id)} />
+          <Slider
+            backgroundImage={backgroundImage}
+            altBackgroundImage={altBackgroundImage}
+            isActive={isActive}
+            onToggle={() => onToggleActive(id)}
+          />
+        </div>
       </div>
     </>
   );
