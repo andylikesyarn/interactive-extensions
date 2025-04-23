@@ -6,10 +6,8 @@ import Button from "../components/Button.jsx";
 
 function Home() {
   //vars for bg images in sliders
-  const red = "public/assets/images/red.svg";
-  const green = "public/assets/images/green.svg";
-  const day = "public/assets/images/day.png";
-  const night = "public/assets/images/night.png";
+  const red = "/assets/images/red.svg";
+  const green = "/assets/images/green.svg";
 
   //vars for buttons
   const [filter, setFilter] = useState("all");
